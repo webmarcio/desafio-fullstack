@@ -79,11 +79,13 @@ Banco de dados Postgresql em docker, pronto para ser utilizado no Desafio.
 ## Extras:
 
 - Exibir o histórico dos planos assinados pelo usuário, com os seguintes dados: <br/>
-  > descrição do plano <br/>
-  > valor <br/>
-  > desconto <br/>
-  > data de pagamento <br/>
+  > descrição do plano  
+  > valor  
+  > desconto  
+  > data de pagamento
 - Utilizar o pré-processador de CSS Tailwind;
 - Estrutura de pastas e organização do código;
 - Utilização e criação de Hooks;
-- Utilizar Typescript corretamente.
+- Utilizar Typescript corretamente;
+- Seguir os padrões do Laravel sempre que possível, especialmente na criação de: Rotas, Models, Controllers;
+- Seguir o padrão REST para as rotas da API.
