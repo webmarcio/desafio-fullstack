@@ -6,8 +6,7 @@
 </h1>
 
 <p align="center">
-  <a href="#frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tarefas">Tarefas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-configuração-do-ambiente">Configuração do ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#extras">Extras</a>
 </p>
@@ -30,14 +29,12 @@ As contratações de plano que o usuário vai realizando deverão ser armazenada
 
 Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada pagamento pertence a um contrato. Quando o usuário troca de plano, e o novo contrato é criado, será criada um ou mais pagamentos pendentes, dependendo do crédito que o usuário tinha e do valor do novo plano que ele escolheu.
 
-## Frontend:
+## Tarefas:
 
 - Exibição dos dados do usuário (não é necessário autenticação);
 - Exibição de todos os planos cadastrados no banco de dados (siga como exemplo o print abaixo);
 - Seleção e assinatura do plano com pagamento fictício (tipo Pix);
 - Alteração de plano para o caso do usuário já ter realizado uma assinatura.
-
-## Backend:
 
 ## 🔧 Configuração do ambiente
 
