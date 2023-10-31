@@ -32,7 +32,7 @@ Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada 
 ## Tarefas:
 
 - Exibição dos dados do usuário (não é necessário autenticação);
-- Exibição de todos os planos cadastrados no banco de dados (siga como exemplo o print abaixo);
+- Exibição de todos os planos cadastrados no banco de dados, criar tela seguindo padrão da imagem a seguir:  <a target="_blank" href="https://ibb.co/2cPmjtw">Tela de planos</a>;
 - Seleção e assinatura do plano com pagamento fictício (tipo Pix);
 - Alteração de plano para o caso do usuário já ter realizado uma assinatura.
 
