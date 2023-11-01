@@ -6,6 +6,7 @@
 </h1>
 
 <p align="center">
+  <a href="#descrição-do-desafio">Descrição do Desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tarefas">Tarefas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-configuração-do-ambiente">Configuração do ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#extras">Extras</a>
@@ -13,6 +14,8 @@
 
 ### Por favor, faça fork desse repositório para iniciar o exercício!
 ### Tempo máximo esperado para resolução: 7 dias
+
+## Descrição do Desafio
 
 Esse sistema gere as assinaturas de um serviço.
 
@@ -41,7 +44,7 @@ Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada 
 #### Isso é apenas um exemplo, deve funcionar para qualquer dia do mês, e para troca de qualquer combinação de planos, tanto para um plano menor, quanto para um plano maior!
 #### A lógica do caso de troca de plano maior para menor faz parte do exercício!
 
-## Tarefas:
+## Tarefas
 
 - Exibição dos dados do usuário (não é necessário autenticação);
 - Exibição de todos os planos cadastrados no banco de dados, criar tela seguindo padrão da imagem a seguir:  <a target="_blank" href="https://ibb.co/2cPmjtw">Tela de planos</a>;
@@ -89,7 +92,7 @@ Banco de dados Postgresql em docker, pronto para ser utilizado no Desafio.
 1. /api/plans - Retorna a lista de planos
 2. /api/user - Retorna o usuário "logado"
 
-## Extras:
+## Extras
 
 - Exibir o histórico dos planos assinados pelo usuário, com os seguintes dados: <br/>
   > descrição do plano  
