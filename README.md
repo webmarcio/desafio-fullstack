@@ -11,23 +11,33 @@
   <a href="#extras">Extras</a>
 </p>
 
+### Por favor, faça fork desse repositório para iniciar o exercício!
+
 Esse sistema gere as assinaturas de um serviço.
 
 O usuário, logado no sistema, pode contratar um plano, que dá direito a um número de cotas de um produto e a uma quantidade de armazenamento em HD.
 
 Para simplificar, nesse exercício não foi desenvolvida a parte de login e autenticação, assim, pode considerar que o usuário está sempre logado.
 
-O usuário inicialmente não tem nenhum plano contratado. Ele pode contratar um dos planos e "pagar" na hora com um "pix". Para esse exercício, basta que haja um botão "pagar" e que a contratação se concretize no banco de dados.
+O usuário inicialmente não tem nenhum plano contratado. Ele pode contratar um dos planos e "pagar" na hora com um "PIX". O sistema deve simular esse pagamento de PIX, gerando uma página para pagamento. Não precisa realmente fazer qualquer operação real de PIX, basta que a contratação se concretize no banco de dados.
 
 O pagamento de cada plano é mensal. A data de pagamento é sempre o mesmo dia do mês em que ele fez a contratação.
 
-Uma vez contratado, o usuário pode trocar de plano. Nesse ponto, ele já realizou um pagamento para iniciar a assinatura; quando ele troca de plano, aquele pagamento que ele fez será convertido em créditos de acordo com a quantidade de dias que ele já usou do plano anterior, e o crédito será aproveitado no próximo plano.
+CUma vez contratado, o usuário pode trocar de plano. Nesse ponto, ele já realizou um pagamento para iniciar a assinatura; quando ele troca de plano, aquele pagamento que ele fez será convertido em créditos de acordo com a quantidade de dias que ele já usou do plano anterior, e o crédito será aproveitado no próximo plano.
 
 Lembrando que ele pode trocar para um plano mais caro, ou um plano mais barato.
 
 As contratações de plano que o usuário vai realizando deverão ser armazenadas numa tabela `contracts` no banco de dados. Essa tabela deve estar relacionada à tabela `users`. Cada usuário pode ter vários contratos, mas apenas um contrato de cada usuário pode ser considerado "ativo". Quando ele troca de plano, o contrato anterior deve ser desativado (nunca apagado) e o novo contrato será marcado como ativo. Deve haver uma forma fácil da api retornar o contrato ativo.
 
-Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada pagamento pertence a um contrato. Quando o usuário troca de plano, e o novo contrato é criado, será criada um ou mais pagamentos pendentes, dependendo do crédito que o usuário tinha e do valor do novo plano que ele escolheu.
+Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada pagamento pertence a um contrato. Quando o usuário troca de plano, e o novo contrato é criado, será criado um ou mais pagamentos pendentes, um pagamento para cada mês, dependendo do crédito que o usuário tinha e do valor do novo plano que ele escolheu.
+
+### Exemplo de troca de plano:
+> - Plano atual do usuário: R$ 100,00 por mês
+> - Data em que ele contratou: 01/09/2023
+> - No dia 15/09/2023, ele trocou para um plano de R$ 200,00 por mês
+> - Assim, o pagamento será gerado no valor de R$ 150,00 (ou seja, 200-50, pois ele teve um crédito de R$ 50,00 que ele não usou do plano anterior ao trocar no dia 15)
+
+#### Isso é apenas um exemplo, deve funcionar para qualquer dia do mês, e para troca de qualquer combinação de planos, tanto para um plano menor, quanto para um plano maior!
 
 ## Tarefas:
 
