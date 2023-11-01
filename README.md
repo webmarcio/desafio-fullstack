@@ -12,6 +12,7 @@
 </p>
 
 ### Por favor, faça fork desse repositório para iniciar o exercício!
+### Tempo máximo esperado para resolução: 7 dias
 
 Esse sistema gere as assinaturas de um serviço.
 
@@ -23,7 +24,7 @@ O usuário inicialmente não tem nenhum plano contratado. Ele pode contratar um 
 
 O pagamento de cada plano é mensal. A data de pagamento é sempre o mesmo dia do mês em que ele fez a contratação.
 
-CUma vez contratado, o usuário pode trocar de plano. Nesse ponto, ele já realizou um pagamento para iniciar a assinatura; quando ele troca de plano, aquele pagamento que ele fez será convertido em créditos de acordo com a quantidade de dias que ele já usou do plano anterior, e o crédito será aproveitado no próximo plano.
+Uma vez contratado, o usuário pode trocar de plano. Nesse ponto, ele já realizou um pagamento para iniciar a assinatura; quando ele troca de plano, aquele pagamento que ele fez será convertido em créditos de acordo com a quantidade de dias que ele já usou do plano anterior, e o crédito será aproveitado no próximo plano.
 
 Lembrando que ele pode trocar para um plano mais caro, ou um plano mais barato.
 
@@ -38,12 +39,14 @@ Cada pagamento que o usuário faz será armazenado numa tabela `payments`. Cada 
 > - Assim, o pagamento será gerado no valor de R$ 150,00 (ou seja, 200-50, pois ele teve um crédito de R$ 50,00 que ele não usou do plano anterior ao trocar no dia 15)
 
 #### Isso é apenas um exemplo, deve funcionar para qualquer dia do mês, e para troca de qualquer combinação de planos, tanto para um plano menor, quanto para um plano maior!
+#### A lógica do caso de troca de plano maior para menor faz parte do exercício!
 
 ## Tarefas:
 
 - Exibição dos dados do usuário (não é necessário autenticação);
 - Exibição de todos os planos cadastrados no banco de dados, criar tela seguindo padrão da imagem a seguir:  <a target="_blank" href="https://ibb.co/2cPmjtw">Tela de planos</a>;
 - Seleção e assinatura do plano com pagamento fictício (tipo Pix);
+- Exibir o plano atualmente contratado;
 - Alteração de plano para o caso do usuário já ter realizado uma assinatura.
 
 ## 🔧 Configuração do ambiente
