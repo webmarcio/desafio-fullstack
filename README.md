@@ -88,4 +88,5 @@ Banco de dados Postgresql em docker, pronto para ser utilizado no Desafio.
 - Utilização e criação de Hooks;
 - Utilizar Typescript corretamente;
 - Seguir os padrões do Laravel sempre que possível, especialmente na criação de: Rotas, Migrations, Models, Controllers;
-- Seguir o padrão REST para as rotas da API.
+- Seguir o padrão REST para as rotas da API;
+- Manter o histórico dos commits e utilizar Conventional Commits Pattern.
