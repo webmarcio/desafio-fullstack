@@ -4,6 +4,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - "POSTGRES_DB=desafio"
-      - "POSTGRES_USER=user"
-      - "POSTGRES_PASSWORD=password"
+      POSTGRES_DB: "desafio"
+      POSTGRES_USER: "testuser"
+      POSTGRES_PASSWORD: "testpassword"
+    volumes:
+      - "./pgdata:/var/lib/postgresql/data"
+

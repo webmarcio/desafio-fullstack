@@ -15,6 +15,6 @@ class UserController extends Controller
      */
     public function show()
     {
-        return User::find(1);
+        return User::with('activeContract.plan')->find(1);
     }
 }
